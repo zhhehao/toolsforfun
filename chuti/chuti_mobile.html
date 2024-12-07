@@ -64,7 +64,7 @@
 
   <script>
     let isChuTi = true;
-    let problems_number = 10;
+    let problems_number = 20;
     let problemAnswer;
     let answerForDisplay;
     let timerInterval; // 新增全局变量，用于存储计时器
@@ -104,7 +104,7 @@
 
     function createPlusProblems(problems_number) {
         let res = [];
-        while (problems_number >= 0) {
+        while (problems_number > 0) {
             let num1 = Math.floor(Math.random() * 900) + 100; 
             let num2 = Math.floor(Math.random() * 900) + 100; 
             let num3 = Math.floor(Math.random() * 900) + 100; 
@@ -143,7 +143,7 @@
 
     function createMulProblems(problems_number) {
         let res = [];
-        while(problems_number >=0) {
+        while(problems_number > 0) {
             let num1 = Math.random() < 0.5 ? Math.floor(Math.random() * 90) + 10 : Math.floor(Math.random() * 900) + 100;
             let num2 = Math.floor(Math.random()*9) + 1;
             let problem = {
